@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,20 +13,38 @@
     --cor-4-claro-1: #F2F2F2;
     --cor-5-claro-2: #8C8C8C;
 
+    --fonte-1-principal: Poppins, Arial;
+
 }
 
 .menu{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-1-preto);
+    height: 5em;
+    box-shadow: 0px 0px 20px var(--cor-1-preto);
+}
+
+.menu >.logo > img {
+    max-width: 5em;
+    margin: 3em;
 }
 
 .nav{
     display: flex;
+    gap: 5vw;
+    font-family: var(--fonte-1-principal);
+    margin: 3em;
 }
 
 .links{
     display: flex;
     align-items: center;
     text-align: center;
-    
+}
+
+.links > a {
+    text-decoration: none;
+    color: var(--cor-4-claro-1);
 }
